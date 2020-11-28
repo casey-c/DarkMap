@@ -1,0 +1,14 @@
+{
+  "modid": "ojb_DarkMap",
+  "name": "Dark Map",
+  "author_list": [
+    "ojb"
+  ],
+  "description": "Dark theme for the map",
+  "version": "0.0.1",
+  "sts_version": "07-30-2020",
+  "mts_version": "2.6.0",
+  "dependencies": [
+    "basemod"
+  ]
+}
