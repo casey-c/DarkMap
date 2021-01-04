@@ -4,10 +4,10 @@
   "author_list": [
     "ojb"
   ],
-  "description": "Dark theme for the map",
-  "version": "0.0.1",
-  "sts_version": "07-30-2020",
-  "mts_version": "2.6.0",
+  "description": "Gives the map a dark theme",
+  "version": "0.1.0",
+  "sts_version": "12-22-2020",
+  "mts_version": "3.18.2",
   "dependencies": [
     "basemod"
   ]

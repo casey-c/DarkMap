@@ -18,6 +18,6 @@ public class DarkMap implements PostInitializeSubscriber {
 
     @Override
     public void receivePostInitialize() {
-        BaseMod.registerModBadge(new Texture("DarkMap/badge.png"), "Dark Map", "ojb", "Makes the map a dark theme", null);
+        BaseMod.registerModBadge(new Texture("DarkMap/badge.png"), "Dark Map", "ojb", "Gives the map a dark theme", null);
     }
 }

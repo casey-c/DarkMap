@@ -23,6 +23,18 @@ public class MapPatches {
         }
     }
 
+    // Map Edge colors
+    @SpirePatch( clz = MapRoomNode.class, method = SpirePatch.CONSTRUCTOR )
+    public static class MapEdgeColorPatches {
+        @SpirePostfixPatch
+        public static void Postfix(MapRoomNode node) {
+            //Color baseMapColor = (Color) ReflectionHacks.getPrivate(map, DungeonMap.class, "baseMapColor");
+            //Color edgeColor = ReflectionHacks.getPrivateStatic(MapRoomNode.class, "AVAILABLE_COLOR");
+            ReflectionHacks.setPrivateStaticFinal(MapRoomNode.class, "AVAILABLE_COLOR", ExtraColors.MAP_EDGE_AVAILABLE);
+            //baseMapColor.set(ExtraColors.mapBg);
+        }
+    }
+
     // --------------------------------------------------------------------------------
     // Map Nodes
     @SpirePatch(clz = MapRoomNode.class, method = "render")
