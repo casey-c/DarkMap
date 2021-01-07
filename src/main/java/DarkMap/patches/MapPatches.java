@@ -1,5 +1,6 @@
 package DarkMap.patches;
 
+import DarkMap.DarkMap;
 import DarkMap.utils.ExtraColors;
 import basemod.ReflectionHacks;
 import com.badlogic.gdx.graphics.Color;
@@ -40,9 +41,9 @@ public class MapPatches {
     @SpirePatch(clz = MapRoomNode.class, method = "render")
     public static class MapRoomNodeOutlinePatch {
         private static int loc = 0;
-        private static final String replaceBG = "{" + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_ICON_BG);" + "$_ = $proceed($$); " + "}";
-        private static final String replaceFG = "{" + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_ICON_FG);" + "$_ = $proceed($$); " + "}";
-        private static final String replaceCircle = "{" + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_CIRCLE);" + "$_ = $proceed($$); " + "}";
+        private static final String replaceBG = "{" + "if (!"+ DarkMap.class.getName() + ".isColoredMapEnabled()) " + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_ICON_BG);" + "$_ = $proceed($$); " + "}";
+        private static final String replaceFG = "{" + "if (!"+ DarkMap.class.getName() + ".isColoredMapEnabled()) " + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_ICON_FG);" + "$_ = $proceed($$); " + "}";
+        private static final String replaceCircle = "{" + "if (!"+ DarkMap.class.getName() + ".isColoredMapEnabled()) " + "sb.setColor(" + ExtraColors.class.getName() + ".MAP_CIRCLE);" + "$_ = $proceed($$); " + "}";
 
         public static ExprEditor Instrument() {
             return new ExprEditor() {

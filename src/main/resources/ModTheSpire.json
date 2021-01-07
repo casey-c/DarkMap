@@ -5,7 +5,7 @@
     "ojb"
   ],
   "description": "Gives the map a dark theme",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "sts_version": "12-22-2020",
   "mts_version": "3.18.2",
   "dependencies": [
