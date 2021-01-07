@@ -75,9 +75,11 @@ Again, only edit the file manually **while the game is not running** as the Colo
 
 ### Installation
 
+You can use the workshop link: [https://steamcommunity.com/sharedfiles/filedetails/?id=2348942418](https://steamcommunity.com/sharedfiles/filedetails/?id=2348942418)
+
 Requires ModTheSpire and BaseMod (find them on the Steam Workshop).
 
-To install this mod, download the latest version at the [releases page](https://github.com/casey-c/DarkMap/releases) and place them into your SlayTheSpire/mods folder.
+To install this mod manually, download the latest version at the [releases page](https://github.com/casey-c/DarkMap/releases) and place the JAR file into your SlayTheSpire/mods folder.
 
 ### Issues / Feedback
 
